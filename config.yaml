@@ -1,0 +1,18 @@
+#Author: Lirantick
+#This is a example of kit configuration.
+
+kits:
+  kit1:
+    item1:
+      id: 50
+      qty: 1
+    item2: 
+      id: 120
+      qty: 5
+    item3: 
+      id: 150
+      qty: 2
+  kit2:
+    item1:
+      id: 10
+      qty: 1

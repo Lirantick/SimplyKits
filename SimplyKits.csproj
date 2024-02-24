@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+<PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>openmod openmod-plugin unturned</PackageTags>
+    <RootNamespace>SimplyKits</RootNamespace>
+    <AssemblyName>SimplyKits</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateNugetPackage>true</GenerateNugetPackage>
+    <Product>A simple way to configure kits</Product>
+    <Nullable>disable</Nullable>
+    <WarningsAsErrors>nullable</WarningsAsErrors>
+    <NoWarn>$(NoWarn);NU1701;NU1702;CS0436</NoWarn>
+    <!-- Configuración del paquete NuGet -->
+    <PackageId>SimplyKits</PackageId>
+    <PackageDescription>A simple way to configure kits</PackageDescription>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageAuthor>Lirantick</PackageAuthor>
+    <PackageTags>openmod openmod-plugin unturned</PackageTags>
+    <Version>0.0.0</Version>
+    <PackageVersion>0.0.0</PackageVersion>
+    <InformationalVersion>0.0.0</InformationalVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateNugetPackage>true</GenerateNugetPackage>
+</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenMod.Unturned" Version="3.7.4+6bfe3e6f" />
+    <PackageReference Include="Legacy2CPSWorkaround" Version="1.0.0">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net461" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="config.yaml" />
+    <EmbeddedResource Include="translations.yaml" />
+  </ItemGroup>
+
+  <Target Name="ChangeAliasesOfNugetRefs" BeforeTargets="FindReferenceAssembliesForReferences;ResolveReferences">
+    <ItemGroup>
+    </ItemGroup>
+  </Target>
+
+</Project>
