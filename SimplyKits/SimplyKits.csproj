@@ -23,6 +23,8 @@
     <InformationalVersion>0.0.0</InformationalVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <GenerateNugetPackage>true</GenerateNugetPackage>
+    <PackageProjectUrl>https://github.com/Lirantick/SimplyKits/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Lirantick/SimplyKits/</RepositoryUrl>
 </PropertyGroup>
 
   <ItemGroup>
